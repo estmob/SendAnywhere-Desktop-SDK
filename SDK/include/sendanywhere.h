@@ -17,9 +17,6 @@ typedef enum {
 
     // trasnfer task
     SENDANYWHERE_STATE_TRANSFERRING,
-
-    // Push Listener
-    SENDANYWHERE_STATE_NOTIFICATION,
 } SendAnywhereState;
 
 typedef enum {
