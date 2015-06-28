@@ -9,14 +9,14 @@
 *.pch
 
 # Libraries
-*.lib
-*.a
+#*.lib
+#*.a
 *.la
 *.lo
 
 # Shared objects (inc. Windows DLLs)
-*.dll
-*.so
+#*.dll
+#*.so
 *.so.*
 *.dylib
 
