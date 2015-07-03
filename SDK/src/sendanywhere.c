@@ -35,7 +35,6 @@ void sendanywhere_init(const char* apiKey, const char* tokenPath) {
 		gOption = paprika_option_create();
 	}
 	paprika_option_set_value(gOption, PAPRIKA_OPTION_PROFILE_NAME, L"Send Anywhere SDK");
-	paprika_option_set_value(gOption, PAPRIKA_OPTION_API_SERVER, "https://test.send-anywhere.com/api/v1/");
 }
 
 void sendanywhere_cleanup() {
