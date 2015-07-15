@@ -18,7 +18,7 @@
 #*.dll
 #*.so
 *.so.*
-*.dylib
+#*.dylib
 
 # Executables
 *.exe
