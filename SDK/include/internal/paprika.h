@@ -129,11 +129,14 @@ typedef struct {
     PaprikaTransferFileState* fileState;
 } PaprikaAllTransferFileState;
 
+typedef enum {
+    PAPRIKA_TRANSFER_DIRECT = 0,
+} PaprikaTransferMode;
+
 
 // send/recv function
 PAPRIKA_EXTERN PaprikaTask paprika_create_upload(
-        const wchar_t* files[], unsigned int fileNumber,
-        const wchar_t* wishKey, bool async, bool secureKey);
+        const wchar_t* files[], unsigned int fileNumber, PaprikaTransferMode trasnferMode);
 
 PAPRIKA_EXTERN PaprikaTask paprika_create_download(
         const wchar_t* key, const wchar_t* destDirPath);

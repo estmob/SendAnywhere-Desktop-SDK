@@ -1,6 +1,5 @@
 #include "sendanywhere.h"
 #include <stdio.h>
-#include <unistd.h>
 
 void callback(SendAnywhereState state, SendAnywhereDetailedState detailedState,
 					const void* param, void* userptr) {

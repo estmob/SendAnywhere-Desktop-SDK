@@ -110,7 +110,7 @@ SendAnywhereTask sendanywhere_create_send(
         const wchar_t* files[], unsigned int fileNumber) {
 	TaskData* task = (TaskData*)malloc(sizeof(TaskData));
 
-	((TaskData*)task)->task = paprika_create_upload(files, fileNumber, NULL, false, false);
+	((TaskData*)task)->task = paprika_create_upload(files, fileNumber, PAPRIKA_TRANSFER_DIRECT);
 
 	return task;
 }
