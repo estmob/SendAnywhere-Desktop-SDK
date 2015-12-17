@@ -4,6 +4,10 @@
 #include <stdbool.h>
 #include <wchar.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 void sendanywhere_init(const char* apiKey, const char* tokenPath);
 void sendanywhere_cleanup();
 
@@ -79,6 +83,9 @@ void sendanywhere_cancel(SendAnywhereTask task);
 
 void sendanywhere_set_listner(SendAnywhereTask task,
                         sendanywhere_listener_function func, void* userptr);
+#ifdef __cplusplus
+}
+#endif
 
 #endif // SENDANYWHERE_H_
 
