@@ -141,7 +141,7 @@ void sendanywhere_cancel(SendAnywhereTask task) {
 
 bool sendanywhere_is_running(SendAnywhereTask task) {
 	PaprikaTask pTask = ((TaskData*)task)->task;
-    paprika_is_running(pTask);
+    return paprika_is_running(pTask);
 }
 
 void sendanywhere_wait(SendAnywhereTask task) {
