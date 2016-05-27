@@ -6,7 +6,7 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 #SET(CMAKE_C_FLAGS "-g")
 
 if(WIN32)
-    link_directories(${CMAKE_SOURCE_DIR}/SDK/lib/win32)
+    link_directories(${CMAKE_SOURCE_DIR}/SDK/lib/windows/win32)
 elseif(APPLE)
     link_directories(${CMAKE_SOURCE_DIR}/SDK/lib/osx)
 elseif(UNIX)
